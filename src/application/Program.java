@@ -5,7 +5,6 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
-import java.util.Date;
 import java.util.List;
 
 public class Program {
@@ -20,6 +19,12 @@ public class Program {
         Department department = new Department(2, null);
         List<Seller> listByDepartment = sellerDao.findByDepartment(department);
         for (Seller s : listByDepartment) {
+            System.out.println(s);
+        }
+
+        System.out.println("\n=== TEST 3: seller findAll ===");
+        List<Seller> listAll = sellerDao.findAll();
+        for (Seller s : listAll) {
             System.out.println(s);
         }
     }
