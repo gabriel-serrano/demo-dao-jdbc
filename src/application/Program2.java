@@ -30,7 +30,7 @@ public class Program2 {
         departmentDao.update(updatedDepartment);
         System.out.println("Updated department: " + updatedDepartment);
 
-        System.out.println("\n=== TEST 4: department delete ===");
+        System.out.println("\n=== TEST 5: department delete ===");
         departmentDao.deleteById(13);
         System.out.println("Deleted department");
     }
